@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Article Home</title>
+    </head>
+    <body>
+        <h1>Individual Articles</h1>
+        <div>
+            <p><%= @article.title %></p>
+            <p><%= @article.content %></p>
+        </div>
+        <h3> To delete this article, click the button below:</h3>
+        <form method="post" action="/articles/<%= @article.id %>/delete">
+            <input id="hidden" type="hidden" name="_method" value="DELETE">
+            <input type="submit" value="delete">
+        </form>
+    </body>
+</html>
