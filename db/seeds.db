@@ -1,0 +1,5 @@
+
+
+yuta = Article.create(:title=>"Comn", :content=>"zzzzzzzzzzzzz")
+yda = Article.create(:title=>"DETE", :content=>"zdaafdazz")
+qetq = Article.create(:title=>"paea", :content=>"taeadazz")
