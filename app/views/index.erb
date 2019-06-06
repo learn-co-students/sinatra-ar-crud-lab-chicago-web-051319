@@ -1,0 +1,16 @@
+<p><a href="/articles/new">Creates a new article</a></p>
+
+<br>
+
+<%# Why my data is not saved??? %>
+<%if @articles %>
+    <%@articles.each do |article|%>
+        <div class="article-info">
+        <p>Title: <%=article.title%></p>
+        <p>Content: <%=article.content%>/</p>
+        </div>
+    <% end %>
+<%end%>
+
+
+<br>
