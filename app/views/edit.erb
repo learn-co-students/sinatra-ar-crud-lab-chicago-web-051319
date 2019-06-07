@@ -1,0 +1,19 @@
+<h1>Edit Your Article</h1>
+<br>
+<h2>Previous Article Title: <%= @article.title %></h2>
+<br>
+<h2>Previous Article Content: <%= @article.content %></h2>
+<br>
+
+<form action="/articles/<%= @article.id %>" method="POST">
+    <input id="hidden" type="hidden" name="_method" value="patch">
+    <label>Edit previous title: </label>
+    <input type="text" name="title">
+    <br>
+    <br>
+    <label>Edit previous content: </label>
+    <input type="text" name="content">
+    <br>
+    <br>
+    <input type="submit" value="submit">
+</form>
